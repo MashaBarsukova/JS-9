@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  </html>
+  <body>
+    <script type="tpl/lodash" id="keyboard-tpl">
+  <div class="keyboard__row">
+    <% forEach(item => { %>
+       <button class="keyboard__btn"><%- item %></button>
+    <% }); %>
+  </div>
+</script>
+<div id="keyboard-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js"></script>
+    <script src="js/functions.js"></script>
+  </body>
+</html>
